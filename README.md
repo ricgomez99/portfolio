@@ -18,4 +18,4 @@ If you’d like to chat about code, projects, or anything tech-related, reach ou
 
 - **LinkedIn:** [profile](https://www.linkedin.com/in/andres-gomez-restrepo)
 
-- **Email:** [mail me](argomez.restrepo@gmail.com)
+- **Email:** [argomez.restrepo@gmail.com](mailto:argomez.restrepo@gmail.com)
