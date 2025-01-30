@@ -16,6 +16,6 @@ This portfolio is built with:
 
 If you’d like to chat about code, projects, or anything tech-related, reach out!
 
-- **LinkedIn:** (https://www.linkedin.com/in/andres-gomez-restrepo)[profile]
+- **LinkedIn:** [profile](https://www.linkedin.com/in/andres-gomez-restrepo)
 
-- **Email:** (argomez.restrepo@gmail.com)[mail me]
+- **Email:** [mail me](argomez.restrepo@gmail.com)
