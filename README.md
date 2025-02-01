@@ -1,5 +1,7 @@
 # Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d6218c81-9271-4858-977c-da3e3276859c/deploy-status)](https://app.netlify.com/sites/argomez/deploys)
+
 Hey there! 👋 Welcome to my portfolio repository. This is where I’m building a space to showcase my work, skills, and the projects I’ve worked on. If you’re here to check out my code or just curious about what I do, you’re in the right place!
 
 ### What’s This About?
