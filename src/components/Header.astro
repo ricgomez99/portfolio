@@ -1,8 +1,31 @@
 ---
 import '../styles/global.css'
+import { Image } from 'astro:assets'
+import profile from '../images/profile.png'
+import SubTitle from './SubTitle.astro'
+import MainTitle from './MainTitle.astro'
+import ContactLinks from './ContactLinks.astro'
+
+const title = "I'm Andres Ricardo Gomez"
+const subtitle = "FullStack Developer"
 ---
 
-<head class="w-full flex flex-col justify-center gap-4 text-white">
-    <article>Hello!</article>
-    <article>I'm the header</article>
-</head>
+<header class="w-full flex flex-col justify-center items-center gap-4 py-5 px-2.5 text-white lg:flex-row lg:justify-start lg:gap-10">
+    <article>
+        <Image 
+            src={profile} 
+            alt={"profile picture"} 
+            width="200" 
+            class="object-contain aspect-square rounded-full" 
+            loading="lazy" 
+        />
+    </article>
+    <article class="flex flex-col gap-3 text-center lg:text-start">
+        <div>
+            <span class="text-lg text-[#7f5af0] font-sans font-semibold">Hello!</span>
+            <MainTitle content={title} />
+            <SubTitle content={subtitle} />
+        </div>
+        <ContactLinks />
+    </article>
+</header>

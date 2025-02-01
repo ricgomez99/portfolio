@@ -1,0 +1,16 @@
+---
+import ContactButton from "./ContactButton.astro"
+
+const iconData = [
+    { title: 'email-logo', link: 'mailto:argomez.restrepo@gmail.com' },
+    { title: 'github-logo', link: 'https://github.com/ricgomez99' },
+    { title: 'linkedin-logo', link: 'https://www.linkedin.com/in/andres-gomez-restrepo/' },
+]
+
+---
+
+<div class="flex flex-row mt-2 justify-center gap-4 items-center lg:justify-start">
+    { iconData && iconData.map((icon) => (
+        <ContactButton iconSrc={icon.title} link={icon.link}  />
+    ))}
+</div>
