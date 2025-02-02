@@ -1,0 +1,13 @@
+---
+import SubTitle from "../components/SubTitle.astro"
+
+const title = 'About me'
+const about = `I'm a Full-Stack Developer with a strong focus on front-end development. I enjoy building scalable and user-friendly applications using ReactJS, TypeScript, NestJS, and MongoDB. I’m always looking to refine my skills, explore new technologies, and tackle challenges that push me to grow. Whether optimizing performance or enhancing user experience, I love turning ideas into well-crafted solutions.`
+---
+
+<article class="flex flex-col justify-center items-center gap-3.5 px-2.5 py-8 lg:justify-start lg:items-start">
+     <SubTitle content={title} />
+    <div class="text-[#b8c1ec] text-xl text-center font-normal font-sans text-wrap w-fit lg:text-start">
+        { about }
+    </div>
+</article>
