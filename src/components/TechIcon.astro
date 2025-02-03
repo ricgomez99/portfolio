@@ -1,0 +1,7 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { iconSrc, delay, className, left } = Astro.props
+---
+
+<Icon name={iconSrc} class={className} style={ `animation-delay: ${delay}; left: ${left};` } />
