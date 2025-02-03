@@ -2,4 +2,19 @@
 
 @theme {
     --font-sans: 'DM Sans Variable', 'sans-serif';
+
+    --animate-scrollLeft: scrollLeft 20s linear infinite;
+
+    @keyframes scrollLeft {
+        to {
+            left: -100px;
+        }
+    }
+}
+
+@layer utilities {
+    .mask-gradient {
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+    }
 }

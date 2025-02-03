@@ -1,0 +1,14 @@
+---
+import { techLogos } from "../utils/techLogos"
+import TechIcon from "./TechIcon.astro"
+
+const leftCal = `max(calc(100px * 9), 100%)`
+const itemClass = `text-[100px] text-[#fffffe] aspect-square absolute animate-scrollLeft`
+---
+
+
+<div class="relative h-[100px] overflow-hidden mask-gradient flex items-center text-">
+    { techLogos && techLogos.map((logo) => (
+        <TechIcon iconSrc={logo.src} className={itemClass} delay={logo.delay} left={leftCal} />
+    )) }
+</div>
