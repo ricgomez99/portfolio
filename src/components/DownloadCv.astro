@@ -1,0 +1,11 @@
+---
+import { Icon } from "astro-icon/components"
+
+const { file, title } = Astro.props
+---
+
+<a href={file} download="Andres_Gomez_Resume" class="my-3 text-lg text-[#fffffe] font-semibold font-sans border-2 border-[#fffffe] py-2.5 px-4 rounded-2xl hover:animate-pulse cursor-pointer">
+    <button type="button" class="flex flex-row gap-1.5 justify-center items-stretch cursor-pointer">{ title }
+        <Icon name='download-logo' size='24'>
+    </button>
+</a>
