@@ -1,0 +1,14 @@
+---
+import TimeLine from "../components/TimeLine.astro"
+import SubTitle from "../components/SubTitle.astro"
+import DownloadCv from "../components/DownloadCv.astro"
+import cv from '../files/Andres_Gomez_Resume.pdf'
+
+const buttonTitle = 'Get full resume'
+---
+
+<article class="w-full flex flex-col my-8 px-2.5 gap-3.5 justify-center items-center lg:items-start">
+    <SubTitle content="Work Experience" />
+    <TimeLine />
+    <DownloadCv title={buttonTitle} file={cv} />
+</article>
