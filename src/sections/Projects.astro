@@ -1,0 +1,16 @@
+---
+import { projects } from "../utils/projects"
+import ProjectCard from "../components/ProjectCard.astro"
+---
+
+<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6 px-2.5 gap-4">
+    { projects && projects.map((item) => (
+        <ProjectCard 
+            title={item.title} 
+            description={item.description} 
+            image={item.image} 
+            link={item.link} 
+            tech={item.tech} 
+        />
+    )) }
+</article>
