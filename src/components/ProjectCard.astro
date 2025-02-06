@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+
+const { title, description, image, link, tech } = Astro.props
+---
+
+<div class="bg-slate-200/50 bg-clip-padding backdrop-blur-xs border border-gray-100 max-w-sm p-3 rounded-3xl grid grid-rows-subgrid row-span-5 shadow-sm shadow-gray-300">
+    <Image src={image} alt='project image' class="max-w-full max-h-52 aspect-square object-cover rounded-2xl" />
+    <h2 class="text-xl text-[#fffffe] font-semibold font-sans">{ title }</h2>
+    <p class="text-[#b8c1ec] text-sm font-sans">{ description }</p>
+    <ul class="flex flex-wrap gap-2">
+        { tech.map((item: string) => (
+            <li class="text-[#fffffe] text-xs font-medium font-sans">{ item }</li>
+        )) }
+    </ul>
+    <a target="_blank" href={link} class="text-[#b8c1ec] hover:text-[#fffffe] py-1.5 px-3.5 w-12 border border-[#fffffe] rounded-xl transition-all duration-300 ease-in-out">
+        <Icon name='link-logo' class='text-lg' />
+    </a>
+</div>
