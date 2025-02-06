@@ -7,7 +7,7 @@ export const projects = [
     title: "Products Payments Processor",
     image: payments,
     description:
-      "Developed a full-stack application for product purchases with features like product listing, real-time stock updates, order summaries, and a simulated payment gateway for secure test transactions.",
+      "Full-stack app for product purchases with real-time stock updates, order summaries, and a test payment gateway.",
     link: "https://payment-processor-main.vercel.app/",
     tech: [
       "ReactJS",
@@ -22,7 +22,7 @@ export const projects = [
     title: "Tickets Manager",
     image: invoices,
     description:
-      "Created an invoice management app with ReactJS and TailwindCSS, allowing users to register, edit, and delete tickets.",
+      "Full-stack app for registering, editing, and deleting tickets.",
     link: "https://github.com/ricgomez99/invoiceApp",
     tech: [
       "ReactJS",
@@ -36,10 +36,10 @@ export const projects = [
     ],
   },
   {
-    title: "REST API for Cats and Owners Management ",
+    title: "REST API for Cats & Owners",
     image: api,
     description:
-      "Designed and implemented a scalable REST API using NestJS, TypeScript, and MongoDB, enabling seamless CRUD operations for managing cat and owner data.",
+      "Scalable REST API with NestJS, TypeScript, and MongoDB for managing cat and owner data.",
     link: "https://github.com/ricgomez99/Cats-Owners",
     tech: ["NestJS", "TypeScript", "MongoDB"],
   },
