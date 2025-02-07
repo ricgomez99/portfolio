@@ -1,0 +1,19 @@
+---
+import { education } from "../utils/education"
+import TimeLineDetails from "./TimeLineDetails.astro"
+
+const icon = 'education-logo'
+---
+
+<div class="flex flex-col items-baseline my-7">
+    { education && education.map((item, index) => (
+        <TimeLineDetails 
+        index={index} 
+        data={ education } 
+        title={item.title} 
+        subtitle={item.subtitle} 
+        date={item.date} 
+        icon={icon}
+        />
+    )) }
+</div>

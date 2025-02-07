@@ -5,10 +5,10 @@ import { Icon } from 'astro-icon/components'
 const { title, description, image, link, tech } = Astro.props
 ---
 
-<div class="bg-slate-200/50 bg-clip-padding backdrop-blur-xs border border-gray-100 max-w-sm p-3 rounded-3xl grid grid-rows-subgrid row-span-5 shadow-sm shadow-gray-300">
+<div class="bg-slate-400/50 bg-clip-padding backdrop-blur-md border border-gray-100 max-w-sm p-3 rounded-3xl grid grid-rows-subgrid row-span-5 shadow-sm shadow-gray-300">
     <Image src={image} alt='project image' class="max-w-full max-h-52 aspect-square object-cover rounded-2xl" />
     <h2 class="text-xl text-[#fffffe] font-semibold font-sans">{ title }</h2>
-    <p class="text-[#b8c1ec] text-sm font-sans">{ description }</p>
+    <p class="text-[#b8bcd3] text-sm font-sans">{ description }</p>
     <ul class="flex flex-wrap gap-2">
         { tech.map((item: string) => (
             <li class="text-[#fffffe] text-xs font-medium font-sans">{ item }</li>

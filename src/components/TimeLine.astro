@@ -1,27 +1,21 @@
 ---
 import { workExperience } from "../utils/workExperience"
-import { Icon } from 'astro-icon/components'
+import TimeLineDetails from "./TimeLineDetails.astro"
 
+const icon = 'work-logo'
 ---
 
-<div class="flex flex-col items-baseline">
+<div class="flex flex-col items-baseline my-7">
   {workExperience && workExperience.map((item, index) => (
-    <div class="relative flex gap-6">
-      <div class="relative flex flex-col items-center">
-        <div class={`absolute top-0 left-[9px] w-[2px] h-full bg-[#fffffe] ${index === workExperience.length - 1 ? 'hidden' : ''}`}></div>
-        
-        <div class="relative w-5 h-5 flex items-center justify-center bg-[#16161a] border-2 border-[#fffffe] rounded-full">
-          <Icon name='work-logo' class='text-xl text-[#fffffe]' />
-        </div>
-      </div>
-
-      <div class="pb-5">
-        <h2 class="text-xl text-[#fffffe] font-semibold font-sans mb-2">{item.title}</h2>
-        <span class="text-[#94a1b2]">{item.company}</span>
-        <p class="text-md text-[#94a1b2] font-normal font-sans">{item.date}</p>
-        <p class="text-[#b8c1ec] text-md w-fit font-normal font-sans my-2">{item.description}</p>
-      </div>
-    </div>
+    <TimeLineDetails 
+      index={index} 
+      data={ workExperience } 
+      title={item.title} 
+      subtitle={item.company} 
+      description={item.description} 
+      date={item.date} 
+      icon={icon}
+    />
   ))}
 </div>
 
