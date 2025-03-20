@@ -8,8 +8,8 @@ const { index, data, title, subtitle, description, date, icon } = Astro.props
     <div class="relative flex flex-col items-center">
         <div class={`absolute top-0 left-[9px] w-[2px] h-full bg-[#fffffe] ${index === data.length - 1 ? 'hidden' : ''}`}></div>
         
-        <div class="relative w-5 h-5 flex items-center justify-center bg-[#16161a] border-2 border-[#fffffe] rounded-full">
-          <Icon name={icon} class='text-2xl text-[#fffffe]' />
+        <div class="relative w-5 h-5 flex items-center justify-center bg-[#16161a] border border-[#fffffe] rounded-full">
+          <Icon name={icon} class='text-[#f9f9f9] object-contain text-lg' />
         </div>
       </div>
 

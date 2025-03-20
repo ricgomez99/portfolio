@@ -1,0 +1,23 @@
+---
+import ProjectCard from "./ProjectCard.astro"
+const { projects } = Astro.props
+interface Project {
+    title: string;
+    image: ImageMetadata;
+    description: string;
+    link: string;
+    tech: string[]
+}
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2.5 gap-4">
+        { projects && projects.map((item: Project) => (
+            <ProjectCard 
+                title={item.title} 
+                description={item.description} 
+                image={item.image} 
+                link={item.link} 
+                tech={item.tech} 
+            />
+        )) }
+</div>
