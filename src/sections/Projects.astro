@@ -1,20 +1,10 @@
 ---
 import { projects } from "../utils/projects"
-import ProjectCard from "../components/ProjectCard.astro"
+import ProjectsGrid from "../components/ProjectsGrid.astro"
 import SubTitle from "../components/SubTitle.astro"
 ---
 
-<article class="my-10 flex flex-col gap-6 justify-center items-center lg:items-start">
+<article class="my-10 flex flex-col px-2.5 gap-6 justify-center items-center lg:items-start">
     <SubTitle content="Projects" />
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2.5 gap-4">
-        { projects && projects.map((item) => (
-            <ProjectCard 
-                title={item.title} 
-                description={item.description} 
-                image={item.image} 
-                link={item.link} 
-                tech={item.tech} 
-            />
-        )) }
-    </div>
+    <ProjectsGrid projects={projects} />
 </article>
