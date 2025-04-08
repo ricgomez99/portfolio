@@ -1,6 +1,7 @@
 import payments from "../images/payments.png";
 import invoices from "../images/invoices.png";
 import api from "../images/api-image.webp";
+import mobileApp from "../images/mobile-app.png";
 
 export const projects = [
   {
@@ -19,21 +20,12 @@ export const projects = [
     ],
   },
   {
-    title: "Tickets Manager",
-    image: invoices,
+    title: "Mobile Wars",
+    image: mobileApp,
     description:
-      "Full-stack app for registering, editing, and deleting tickets.",
-    link: "https://github.com/ricgomez99/invoiceApp",
-    tech: [
-      "ReactJS",
-      "Node",
-      "Express",
-      "MongoDB",
-      "Mongoose",
-      "JavaScript",
-      "TailwindCSS",
-      "JWT",
-    ],
+      "Mobile application that consumes the swapi API for rendering character, planets and films data",
+    link: "https://github.com/ricgomez99/mobile-wars",
+    tech: ["React Native", "TypeScript", "Expo"],
   },
   {
     title: "REST API for Cats & Owners",
