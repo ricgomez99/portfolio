@@ -2,15 +2,15 @@
 import ContactButton from "./ContactButton.astro"
 
 const iconData = [
-    { title: 'email-logo', link: 'mailto:argomez.restrepo@gmail.com' },
-    { title: 'github-logo', link: 'https://github.com/ricgomez99' },
-    { title: 'linkedin-logo', link: 'https://www.linkedin.com/in/andres-gomez-restrepo/' },
+    { title: 'email-logo', link: 'mailto:argomez.restrepo@gmail.com', name: 'Email' },
+    { title: 'github-logo', link: 'https://github.com/ricgomez99', name: 'Github' },
+    { title: 'linkedin-logo', link: 'https://www.linkedin.com/in/andres-gomez-restrepo/', name: 'Linkedin' },
 ]
 
 ---
 
 <div class="flex flex-row mt-2 justify-center gap-4 items-center lg:justify-start">
     { iconData && iconData.map((icon) => (
-        <ContactButton iconSrc={icon.title} link={icon.link}  />
+        <ContactButton iconSrc={icon.title} link={icon.link} title={icon.name}  />
     ))}
 </div>
