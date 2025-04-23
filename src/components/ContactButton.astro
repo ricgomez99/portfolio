@@ -3,12 +3,14 @@ import { Icon } from 'astro-icon/components'
 type Props = {
     iconSrc: string,
     link: string, 
+    title: string
 }
-const { iconSrc, link } = Astro.props
+const { iconSrc, link, title } = Astro.props
 ---
 
 <a class="no-underline" target="_blank" href={link}>
-    <button type="button" class="bg-transparent border-1 border-[#7f5af0] hover:scale-90 hover:shadow-[#895af0] hover:shadow-sm transition-all duration-300 ease-in-out py-2.5 px-6 rounded-xl cursor-pointer flex justify-center items-center">
-        <Icon name={iconSrc} class="text-[#7f5af0]" size="20"  />
+    <button type="button" class="flex flex-row justify-center items-center gap-1.5  bg-transparent border-1 text-[#7f5af0] text-xs font-sans font-bold border-[#7f5af0] hover:scale-90 hover:shadow-[#895af0] hover:shadow-sm transition-all duration-300 ease-in-out py-2.5 px-6 rounded-xl cursor-pointer">
+        <Icon name={iconSrc} class='w-4 h-4'  />
+        <span class="pt-0.5">{title}</span>
     </button>
 </a>
