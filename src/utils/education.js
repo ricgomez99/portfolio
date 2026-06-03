@@ -1,4 +1,8 @@
 export const education = [
-  { title: "Soy Henry", subtitle: "FullStack Developer", date: "2022-2033" },
-  { title: "SENA", subtitle: "Mobile Developer", date: "2024-Present" },
+  {
+    title: "B.S. in Systems Engineering",
+    subtitle: "Universidad Nacional Abierta y a Distancia",
+    date: "Jan 2026 - Present",
+  },
+  ,
 ];

@@ -1,0 +1,17 @@
+---
+import { Icon } from "astro-icon/components"
+
+const { title, subtitle, description, date } = Astro.props
+---
+
+<div class="flex flex-row gap-6 justify-center align-middle border border-[#fffffe] rounded-2xl p-4">
+    <section class="w-10 h-10 bg-white rounded-full flex justify-center self-center">
+        <Icon name='school-icon' class='w-6 h-6 self-center'/>
+    </section>
+    <section class="pt-2 flex flex-col">
+        <h2 class="text-xl text-[#fffffe] font-semibold font-sans mb-2">{title}</h2>
+        <span class="text-[#fffffe] font-sans">{subtitle}</span>
+        <p class="text-md text-[#94a1b2] font-normal font-sans">{date}</p>
+        <p class="text-[#b8c1ec] text-md w-fit font-normal font-sans my-2">{description}</p>
+    </section>
+</div>
